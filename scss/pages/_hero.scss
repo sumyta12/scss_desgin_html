@@ -1,0 +1,68 @@
+@import "./../base/mixin/Anchor";
+@import "./../base/mixin/navSection";
+@import "../base/variable/colorplate";
+nav {
+  background-color: $primay-color;
+
+  .container {
+    .nav_wrapper {
+      display: flex;
+
+      .nav_left {
+        @include center_element(35%, flex, center);
+
+        ul {
+          @include direction_space(100%, flex, space-between);
+          li {
+            a {
+              @include a(23px, 300, system-ui, #000000);
+            }
+          }
+        }
+      }
+      .nav_logo {
+        width: 30%;
+        text-align: center;
+        padding: 10px 0;
+        img {
+          width: 30%;
+        }
+      }
+      .nav_right {
+        @include center_element(35%, flex, center);
+        ul {
+          @include direction_space(100%, flex, space-between);
+          li {
+            a {
+              @include a(23px, 300, system-ui, #000000);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#banner {
+  .container {
+    .banner_wrapper {
+      background: url("https://cdn.shopify.com/s/files/1/0110/8587/3210/files/aleph-beauty-519-mcu-1400_2560x.jpg?v=1660530854");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      padding-top: 220px;
+      padding-bottom: 100px;
+      margin: 0 auto;
+      .banner_Content {
+        width: 100%;
+        color: $banner-color;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 300;
+        .buttonDesign{
+          @include btn($btn-color,#fff);
+        }
+       }
+    }
+  }
+}

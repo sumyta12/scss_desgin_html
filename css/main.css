@@ -4,6 +4,130 @@
   box-sizing: border-box;
 }
 
-h1 {
-  background-color: bisque;
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #f6f6f4;
+}
+nav .container .nav_wrapper {
+  display: flex;
+}
+nav .container .nav_wrapper .nav_left {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+nav .container .nav_wrapper .nav_left ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .nav_wrapper .nav_left ul li a {
+  font-size: 23px;
+  font-weight: 300;
+  font-family: system-ui;
+  color: #000000;
+  position: relative;
+}
+nav .container .nav_wrapper .nav_left ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transform-origin: left bottom;
+}
+nav .container .nav_wrapper .nav_left ul li a:hover::after {
+  transform: scaleX(1);
+}
+nav .container .nav_wrapper .nav_logo {
+  width: 30%;
+  text-align: center;
+  padding: 10px 0;
+}
+nav .container .nav_wrapper .nav_logo img {
+  width: 30%;
+}
+nav .container .nav_wrapper .nav_right {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+nav .container .nav_wrapper .nav_right ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .nav_wrapper .nav_right ul li a {
+  font-size: 23px;
+  font-weight: 300;
+  font-family: system-ui;
+  color: #000000;
+  position: relative;
+}
+nav .container .nav_wrapper .nav_right ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transform-origin: left bottom;
+}
+nav .container .nav_wrapper .nav_right ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+#banner .container .banner_wrapper {
+  background: url("https://cdn.shopify.com/s/files/1/0110/8587/3210/files/aleph-beauty-519-mcu-1400_2560x.jpg?v=1660530854");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 220px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+#banner .container .banner_wrapper .banner_Content {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+}
+#banner .container .banner_wrapper .banner_Content .buttonDesign {
+  display: inline-block;
+  background-color: #E2DCD2;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 27px;
+  font-weight: 400;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  border: transparent;
+  transition: all 0.5s ease;
+}
+#banner .container .banner_wrapper .banner_Content .buttonDesign:hover {
+  background-color: #000;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

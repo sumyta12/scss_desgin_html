@@ -1,0 +1,29 @@
+@mixin center_element($w, $d, $a) {
+  width: $w;
+  display: $d;
+  align-items: $a;
+}
+
+@mixin direction_space($w, $d, $jc) {
+  width: $w;
+  display: $d;
+  justify-content: $jc;
+}
+@mixin btn($bc, $c) {
+  display: inline-block;
+  background-color: $bc;
+  color: $c;
+  font-size: 14px;
+  padding: 15px 27px;
+  font-weight: 400;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  border: transparent;
+  transition: all 0.5s ease;
+  &:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
