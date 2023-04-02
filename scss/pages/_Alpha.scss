@@ -1,0 +1,66 @@
+@import "./../base/variable/fontfamily";
+#Alpha {
+  margin-top: 20px;
+
+  .container {
+    .Apha_wrapper {
+      display: flex;
+      .alpha_item {
+        width: 50%;
+        overflow: hidden;
+      }
+      .alpha_left {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+      .alpha_right {
+        background-color: #efece6;
+        padding: 103px 0 103px;
+         
+        .alpha_desgin {
+          width: 70%;
+          margin: 0 auto;
+
+          p {
+            font-family: system-ui;
+            font-weight: 400;
+            font-size: 36px;
+          }
+          h5 {
+            font-family: system-ui;
+            font-weight: 400;
+            font-size: 36px;
+            text-align: end;
+            margin-top: 30px;
+          }
+          .span_design {
+            margin-top: 30px;
+            font-family: $primay-text;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: justify;
+          }
+          .list_item {
+            ul {
+              display: flex;
+              justify-content: space-between;
+              li {
+                p {
+                  margin-top: 20px;
+                  font-weight: 500;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          button {
+            margin-top: 30px;
+            @include btn(#e2dcd2, #fff);
+          }
+        }
+      }
+    }
+  }
+}

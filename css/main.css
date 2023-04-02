@@ -130,4 +130,74 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
 #banner .container .banner_wrapper .banner_Content .buttonDesign:hover {
   background-color: #000;
   color: #fff;
+}
+
+#Alpha {
+  margin-top: 20px;
+}
+#Alpha .container .Apha_wrapper {
+  display: flex;
+}
+#Alpha .container .Apha_wrapper .alpha_item {
+  width: 50%;
+  overflow: hidden;
+}
+#Alpha .container .Apha_wrapper .alpha_left img {
+  width: 100%;
+  display: block;
+}
+#Alpha .container .Apha_wrapper .alpha_right {
+  background-color: #efece6;
+  padding: 103px 0 103px;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin {
+  width: 70%;
+  margin: 0 auto;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin p {
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 36px;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin h5 {
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: end;
+  margin-top: 30px;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin .span_design {
+  margin-top: 30px;
+  font-family: system-ui;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin .list_item ul {
+  display: flex;
+  justify-content: space-between;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin .list_item ul li p {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin button {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #e2dcd2;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 27px;
+  font-weight: 400;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  border: transparent;
+  transition: all 0.5s ease;
+}
+#Alpha .container .Apha_wrapper .alpha_right .alpha_desgin button:hover {
+  background-color: #000;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
