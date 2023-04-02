@@ -1,0 +1,79 @@
+#findPerfectShade {
+  padding: 119px 0 121px;
+  .container {
+    .findOnepart {
+      background-color: antiquewhite;
+      @include image_sizing(200px, 250px);
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+    .findtwopart {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      .findtwopartfirstpart {
+        width: 20%;
+        .imgOne {
+          @include image_sizing(100px, 150px);
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .findtwopartmiddlepart {
+        width: 50%;
+        h4 {
+          @include textdesign(system-ui, 47px, 300);
+          margin-bottom: 20px;
+        }
+        p {
+          @include textdesign(system-ui, 15px, 300);
+          margin-bottom: 20px;
+        }
+        button {
+          @include btn($btn-color, #fff);
+        }
+      }
+      .findtwopartsecondpart {
+        width: 30%;
+
+        .imgtwo {
+          @include image_sizing(300px, 350px);
+          margin-left: auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .findthreepart {
+      display: flex;
+      .itemOne {
+        width: 50%;
+
+        .one {
+          @include image_sizing(280px, 300px);
+          margin: 0 auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .itemtwo {
+        width: 50%;
+
+        .two {
+          @include image_sizing(150px, 180px);
+          margin-right: auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

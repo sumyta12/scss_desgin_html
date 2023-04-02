@@ -1,0 +1,6 @@
+@mixin image_sizing($w, $h) {
+  width: $w;
+  height: $h;
+  overflow: hidden;
+}
+

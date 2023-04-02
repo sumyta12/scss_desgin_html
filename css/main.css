@@ -12,6 +12,18 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -200,4 +212,106 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
 #Alpha .container .Apha_wrapper .alpha_right .alpha_desgin button:hover {
   background-color: #000;
   color: #fff;
+}
+
+#findPerfectShade {
+  padding: 119px 0 121px;
+}
+#findPerfectShade .container .findOnepart {
+  background-color: antiquewhite;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#findPerfectShade .container .findOnepart img {
+  width: 100%;
+}
+#findPerfectShade .container .findtwopart {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#findPerfectShade .container .findtwopart .findtwopartfirstpart {
+  width: 20%;
+}
+#findPerfectShade .container .findtwopart .findtwopartfirstpart .imgOne {
+  width: 100px;
+  height: 150px;
+  overflow: hidden;
+}
+#findPerfectShade .container .findtwopart .findtwopartfirstpart .imgOne img {
+  width: 100%;
+}
+#findPerfectShade .container .findtwopart .findtwopartmiddlepart {
+  width: 50%;
+}
+#findPerfectShade .container .findtwopart .findtwopartmiddlepart h4 {
+  font-family: system-ui;
+  font-size: 47px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+#findPerfectShade .container .findtwopart .findtwopartmiddlepart p {
+  font-family: system-ui;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+#findPerfectShade .container .findtwopart .findtwopartmiddlepart button {
+  display: inline-block;
+  background-color: #E2DCD2;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 27px;
+  font-weight: 400;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  border: transparent;
+  transition: all 0.5s ease;
+}
+#findPerfectShade .container .findtwopart .findtwopartmiddlepart button:hover {
+  background-color: #000;
+  color: #fff;
+}
+#findPerfectShade .container .findtwopart .findtwopartsecondpart {
+  width: 30%;
+}
+#findPerfectShade .container .findtwopart .findtwopartsecondpart .imgtwo {
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  margin-left: auto;
+}
+#findPerfectShade .container .findtwopart .findtwopartsecondpart .imgtwo img {
+  width: 100%;
+}
+#findPerfectShade .container .findthreepart {
+  display: flex;
+}
+#findPerfectShade .container .findthreepart .itemOne {
+  width: 50%;
+}
+#findPerfectShade .container .findthreepart .itemOne .one {
+  width: 280px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#findPerfectShade .container .findthreepart .itemOne .one img {
+  width: 100%;
+}
+#findPerfectShade .container .findthreepart .itemtwo {
+  width: 50%;
+}
+#findPerfectShade .container .findthreepart .itemtwo .two {
+  width: 150px;
+  height: 180px;
+  overflow: hidden;
+  margin-right: auto;
+}
+#findPerfectShade .container .findthreepart .itemtwo .two img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
