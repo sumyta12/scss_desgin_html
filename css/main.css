@@ -406,7 +406,7 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
 }
 #Featured-box .container .FeatureDisplay .Featureslider {
   width: 33%;
-  height: 580px;
+  max-height: 580px;
   padding: 25px 30px;
   background-color: #E2DCD2;
   transition-delay: 3s;

@@ -38,7 +38,7 @@
       justify-content: space-between;
       .Featureslider {
         width: 33%;
-        height: 580px;
+        max-height: 580px;
         padding: 25px 30px;
         background-color: $btn-color;
         img {
