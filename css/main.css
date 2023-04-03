@@ -314,4 +314,202 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
 }
 #findPerfectShade .container .findthreepart .itemtwo .two img {
   width: 100%;
+}
+
+#brands-testimonial {
+  background-color: #e4e1dc;
+  padding: 137px 0 150px;
+  text-align: center;
+}
+#brands-testimonial .bands-talk {
+  width: 60%;
+  margin: 0 auto;
+}
+#brands-testimonial .bands-talk p {
+  font-family: system-ui;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+#Featured-box {
+  padding-bottom: 20px;
+  padding-top: 75px;
+}
+#Featured-box .container .Featuredtop_Content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_left {
+  width: 50%;
+  display: flex;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_left h3 {
+  font-family: system-ui;
+  font-size: 30px;
+  font-weight: 300;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_left span {
+  line-height: 45px;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_left span a {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: system-ui;
+  color: #000000;
+  position: relative;
+  margin-right: 30px;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_left span a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transform-origin: left bottom;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_left span a:hover::after {
+  transform: scaleX(1);
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_left span a:first-child {
+  margin-left: 20px;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_right {
+  width: 30%;
+  text-align: right;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_right button {
+  display: inline-block;
+  background-color: #E2DCD2;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 27px;
+  font-weight: 400;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  border: transparent;
+  transition: all 0.5s ease;
+}
+#Featured-box .container .Featuredtop_Content .Featured_Content_right button:hover {
+  background-color: #000;
+  color: #fff;
+}
+#Featured-box .container .FeatureDisplay {
+  display: flex;
+  justify-content: space-between;
+}
+#Featured-box .container .FeatureDisplay .Featureslider {
+  width: 33%;
+  height: 580px;
+  padding: 25px 30px;
+  background-color: #E2DCD2;
+  transition-delay: 3s;
+}
+#Featured-box .container .FeatureDisplay .Featureslider img {
+  width: 100%;
+}
+#Featured-box .container .FeatureDisplay .Featureslider .hover_context {
+  display: none;
+}
+#Featured-box .container .FeatureDisplay .Featureslider:hover {
+  background: url("https://cdn.shopify.com/s/files/1/0110/8587/3210/files/3.0_3435fef5-e084-4c79-8989-21cba4476cef.jpg?v=1666336086");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+#Featured-box .container .FeatureDisplay .Featureslider:hover img,
+#Featured-box .container .FeatureDisplay .Featureslider:hover .slider_context {
+  display: none;
+}
+#Featured-box .container .FeatureDisplay .Featureslider:hover .hover_context {
+  display: block;
+}
+#Featured-box .container .FeatureDisplay .Featureslider:hover .hover_context button {
+  display: inline-block;
+  background-color: #E2DCD2;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 27px;
+  font-weight: 400;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  border: transparent;
+  transition: all 0.5s ease;
+}
+#Featured-box .container .FeatureDisplay .Featureslider:hover .hover_context button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#last-part {
+  background-color: #E2DCD2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#last-part .container .last_wrapeer {
+  display: flex;
+}
+#last-part .container .last_wrapeer .wrapper_left {
+  width: 50%;
+}
+#last-part .container .last_wrapeer .wrapper_left p {
+  font-family: system-ui;
+  font-size: 36px;
+  font-weight: 300;
+}
+#last-part .container .last_wrapeer .wrapper_left .emaildesgin {
+  font-family: system-ui;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 20px;
+  position: relative;
+}
+#last-part .container .last_wrapeer .wrapper_left .emaildesgin::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #000000;
+  bottom: -33px;
+  left: 0;
+}
+#last-part .container .last_wrapeer .wrapper_left .emaildesgin button {
+  position: absolute;
+  top: 17px;
+  right: 0;
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 27px;
+  font-weight: 400;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  border: transparent;
+  transition: all 0.5s ease;
+}
+#last-part .container .last_wrapeer .wrapper_left .emaildesgin button:hover {
+  background-color: #000;
+  color: #fff;
+}
+#last-part .container .last_wrapeer .wrapper_right {
+  width: 50%;
+  padding: 10px 60px;
+}
+#last-part .container .last_wrapeer .wrapper_right ul li {
+  margin-top: 30px;
+}
+#last-part .container .last_wrapeer .wrapper_right ul li a {
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */

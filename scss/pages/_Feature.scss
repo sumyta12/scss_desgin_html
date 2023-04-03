@@ -1,0 +1,121 @@
+#Featured-box {
+  padding-bottom: 20px;
+  padding-top: 75px;
+  .container {
+    .Featuredtop_Content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .Featured_Content_left {
+        width: 50%;
+        display: flex;
+        h3 {
+          @include textdesign(system-ui, 30px, 300);
+        }
+        span {
+          line-height: 45px;
+          a {
+            @include a(16px, 300, system-ui, #000000);
+            margin-right: 30px;
+
+            &:first-child {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+      .Featured_Content_right {
+        width: 30%;
+
+        text-align: right;
+        button {
+          @include btn($btn-color, #fff);
+        }
+      }
+    }
+    .FeatureDisplay {
+      display: flex;
+      justify-content: space-between;
+      .Featureslider {
+        width: 33%;
+        height: 580px;
+        padding: 25px 30px;
+        background-color: $btn-color;
+        img {
+          width: 100%;
+        }
+        transition-delay: 3s;
+        .hover_context {
+          display: none;
+        }
+        &:hover {
+          img,
+          .slider_context {
+            display: none;
+          }
+          background: url("https://cdn.shopify.com/s/files/1/0110/8587/3210/files/3.0_3435fef5-e084-4c79-8989-21cba4476cef.jpg?v=1666336086");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          text-align: center;
+
+          .hover_context {
+            display: block;
+            button {
+              @include btn($btn-color, #fff);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#last-part {
+  background-color: $btn-color;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .container {
+    .last_wrapeer {
+      display: flex;
+      .wrapper_left {
+        width: 50%;
+        p {
+          @include textdesign(system-ui, 36px, 300);
+        }
+        .emaildesgin {
+          @include textdesign(system-ui, 25px, 300);
+          margin-top: 20px;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            background-color: #000000;
+            bottom: -33px;
+            left: 0;
+          }
+          button {
+            position: absolute;
+            top: 17px;
+            right: 0;
+            @include btn(#000000, #fff);
+          }
+        }
+      }
+      .wrapper_right {
+        width: 50%;
+        padding: 10px 60px;
+        ul {
+          li {
+            a {
+              color: #000000;
+            }
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

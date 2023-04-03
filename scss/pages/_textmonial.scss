@@ -1,0 +1,13 @@
+#brands-testimonial {
+  background-color: #e4e1dc;
+  padding: 137px 0 150px;
+  text-align: center;
+  .bands-talk {
+    width: 60%;
+    margin: 0 auto;
+
+    p {
+      @include textdesign(system-ui, 36px, 300);
+    }
+  }
+}
