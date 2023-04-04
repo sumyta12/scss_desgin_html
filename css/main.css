@@ -31,6 +31,9 @@ span {
 
 nav {
   background-color: #f6f6f4;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 nav .container .nav_wrapper {
   display: flex;
@@ -44,6 +47,9 @@ nav .container .nav_wrapper .nav_left ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+nav .container .nav_wrapper .nav_left ul li {
+  position: relative;
 }
 nav .container .nav_wrapper .nav_left ul li a {
   font-size: 23px;
@@ -66,6 +72,31 @@ nav .container .nav_wrapper .nav_left ul li a::after {
 }
 nav .container .nav_wrapper .nav_left ul li a:hover::after {
   transform: scaleX(1);
+}
+nav .container .nav_wrapper .nav_left ul li:hover .drop-down-menu {
+  opacity: 1;
+  visibility: visible;
+}
+nav .container .nav_wrapper .nav_left ul li .drop-down-menu {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  transform: translateY(20%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  background-color: #fff;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0.5s;
+}
+nav .container .nav_wrapper .nav_left ul li .drop-down-menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav .container .nav_wrapper .nav_left ul li .drop-down-menu ul li {
+  margin-right: 30px;
 }
 nav .container .nav_wrapper .nav_logo {
   width: 30%;
@@ -108,13 +139,16 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
   transform: scaleX(1);
 }
 
+#banner {
+  position: relative;
+}
 #banner .container .banner_wrapper {
   background: url("https://cdn.shopify.com/s/files/1/0110/8587/3210/files/aleph-beauty-519-mcu-1400_2560x.jpg?v=1660530854");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  padding-top: 220px;
+  padding-top: 350px;
   padding-bottom: 100px;
   margin: 0 auto;
 }
@@ -152,6 +186,7 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
 }
 #Alpha .container .Apha_wrapper .alpha_item {
   width: 50%;
+  flex: 0 1 auto;
   overflow: hidden;
 }
 #Alpha .container .Apha_wrapper .alpha_left img {
@@ -168,13 +203,13 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
 }
 #Alpha .container .Apha_wrapper .alpha_right .alpha_desgin p {
   font-family: system-ui;
-  font-weight: 400;
   font-size: 36px;
+  font-weight: 400;
 }
 #Alpha .container .Apha_wrapper .alpha_right .alpha_desgin h5 {
   font-family: system-ui;
-  font-weight: 400;
   font-size: 36px;
+  font-weight: 400;
   text-align: end;
   margin-top: 30px;
 }
@@ -191,8 +226,9 @@ nav .container .nav_wrapper .nav_right ul li a:hover::after {
 }
 #Alpha .container .Apha_wrapper .alpha_right .alpha_desgin .list_item ul li p {
   margin-top: 20px;
-  font-weight: 500;
+  font-family: system-ui;
   font-size: 20px;
+  font-weight: 500;
 }
 #Alpha .container .Apha_wrapper .alpha_right .alpha_desgin button {
   margin-top: 30px;

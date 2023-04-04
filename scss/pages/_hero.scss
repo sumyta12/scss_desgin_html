@@ -4,7 +4,9 @@
 @import "../base/variable/colorplate";
 nav {
   background-color: $primay-color;
-
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
   .container {
     .nav_wrapper {
       display: flex;
@@ -17,6 +19,33 @@ nav {
           li {
             a {
               @include a(23px, 300, system-ui, #000000);
+            }
+            position: relative;
+            &:hover .drop-down-menu{
+              opacity: 1;
+              visibility: visible;
+            }
+            .drop-down-menu {
+              top: 100%;
+              left: 0;
+              position: absolute;
+              transform: translateY(20%);
+              padding-top: 30px;
+              padding-bottom: 30px;
+              padding-right: 30px;
+              background-color: $banner-color;
+              color: #fff;
+              opacity: 0;
+              visibility: hidden;
+              transition-delay: 0.5s;
+              ul {
+                display: flex;
+                justify-content: space-around;
+                li {
+                  margin-right: 30px;
+                }
+               
+              }
             }
           }
         }
@@ -44,6 +73,7 @@ nav {
   }
 }
 #banner {
+  position: relative;
   .container {
     .banner_wrapper {
       background: url("https://cdn.shopify.com/s/files/1/0110/8587/3210/files/aleph-beauty-519-mcu-1400_2560x.jpg?v=1660530854");
@@ -51,7 +81,7 @@ nav {
       background-position: center;
       background-size: cover;
       width: 100%;
-      padding-top: 220px;
+      padding-top: 350px;
       padding-bottom: 100px;
       margin: 0 auto;
       .banner_Content {
@@ -60,10 +90,10 @@ nav {
         text-align: center;
         font-size: 50px;
         font-weight: 300;
-        .buttonDesign{
-          @include btn($btn-color,#fff);
+        .buttonDesign {
+          @include btn($btn-color, #fff);
         }
-       }
+      }
     }
   }
 }
